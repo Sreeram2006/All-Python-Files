@@ -1,0 +1,295 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "3. Python Classes - Lesson 3.ipynb",
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "dBwYdwFe4-Kc"
+      },
+      "source": [
+        "# concatenation\n",
+        "*duck typing*"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "DodnTTS2DzS6",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e875ddde-ccca-4c0c-80a2-3f3357800af7"
+      },
+      "source": [
+        "a = 'school' \n",
+        "b= ' bus'\n",
+        "noun = a+b# -> concatenating --> putting them together\n",
+        "print(noun)\n",
+        "a=9\n",
+        "b=3\n",
+        "c=a+b\n",
+        "print(a+b)\n"
+      ],
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "school bus\n",
+            "12\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "5saP-acBEXK2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b8f03cee-2b52-402f-86cb-dd4c9735b621"
+      },
+      "source": [
+        "s = \"I am going to the market\"\n",
+        "print(\"Tanay is\",s[5:10],s[11:17],\"school\") #=> slicing a string, concatenate"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Tanay is going to the school\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-LJqhrMs0sGP",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "71b3ee5b-3dc6-4e01-c742-9f4feee4368c"
+      },
+      "source": [
+        "name = 'Neville'\n",
+        "location = 'Hyderabad'\n",
+        "year  = 2020\n",
+        "fav_num = 10.8\n",
+        "fav_num1 = 3.9\n",
+        "fav2 = 7\n",
+        "fav3 = 3\n",
+        "fav = 18\n",
+        "print(name +\" \"+ location )\n",
+        "print(fav + year )\n",
+        "print(fav_num + fav_num1)"
+      ],
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Neville Hyderabad\n",
+            "2038\n",
+            "14.700000000000001\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Ofd89sOa4nIe",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "5058b703-e064-4cff-d432-b92589bf9409"
+      },
+      "source": [
+        "#concatenation\n",
+        "x = '20'\n",
+        "y = '30'\n",
+        "z = y+x\n",
+        "print(z)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "3020\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "NhWfXVKC6Yo7",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "f7c0de55-23e4-42e1-8b66-45047ab82232"
+      },
+      "source": [
+        "x = 'two'\n",
+        "y = 'three'\n",
+        "z = x+y\n",
+        "print(z)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "twothree\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "05xG7y256_yh",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1304a0d3-e411-4f31-b977-981147a2843c"
+      },
+      "source": [
+        "#indentation\n",
+        "x = 3\n",
+        "if (x>2):\n",
+        "  print(x)\n",
+        "  x = x**2\n",
+        "print(x)"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "3\n",
+            "9\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "vZcmWlQ38F_R",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "d0aa381c-d3ea-4409-f7c9-e58cb85fc7dc"
+      },
+      "source": [
+        "#new line character\n",
+        "print(\" First things first\\n I will say all the\\n words inside my head\\n I'm fired and tired of the way things have been\")"
+      ],
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            " First things first\n",
+            " I will say all the\n",
+            " words inside my head\n",
+            " I'm fired and tired of the way things have been\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "maY4-Ti3-Tn7",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "94522894-8849-4e97-dc91-7b50c0a538b0"
+      },
+      "source": [
+        "#tab character\n",
+        "print(\"This is\\t new data\")"
+      ],
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "This is\t\t\t new data\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "vqb6Q3w3-ovW",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a5a9ceb2-2afe-406f-98f3-bfd71f639a79"
+      },
+      "source": [
+        "#carriage return\n",
+        "print(\"first line start from here\\rthis is second line\")"
+      ],
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "first line start from here\rthis is second line\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "GvfNpWk1dsOy"
+      },
+      "source": [
+        "#Slicing\n",
+        "a = \"I went to the market\"\n",
+        "b = 'I am string'\n",
+        "# 'I' ' ' 'a' 'm' ' ' 's' 't' 'r' 'i'  'n' 'g'\n",
+        "#  0   1   2   3   4   5   6   7   8    9   10\n",
+        "print(type(b))\n",
+        "print(len(b))\n",
+        "your_name = b[2 : 4]\n",
+        "print(your_name)\n"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
